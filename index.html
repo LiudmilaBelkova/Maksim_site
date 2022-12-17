@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Обо мне</title>
-    <link rel="icon" type="image/x-icon" href="train16.png">
+    <link rel="icon" type="image/x-icon" href="images/train16.png">
     <link href="bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
 </head>
@@ -14,13 +14,18 @@
             </div>
         </div>
         <div class="row">
-            <div id="bio" class="col-12 col-lg-7 text-center">
-                
-                <img src="photo.jpg" class="img-fluid" width="60%" />
-                <img src="Maxim_Cab.jpg" class="img-fluid" width="60%"/>
-                <img src="Maxim_Red.jpg" class="img-fluid" width="60%"/>
+            <div id="bio" class="col-12 col-lg-4 text-center photo-col">
+                <img src="images/photo.jpg" class="img-fluid"  />
+                <img src="images/Maxim_Cab.jpg" class="img-fluid" />
+                <img src="images/Maxim_Red.jpg" class="img-fluid" />
             </div>
-            <div id="more" class="col-12 col-lg-5">
+            <div class="col-12 col-lg-4 text-center photo-col">
+                
+                <img src="images/max_smile.jpg" class="img-fluid" />
+                <img src="images/Max_school.jpg" class="img-fluid" />
+                <img src="images/Max_tree.jpg" class="img-fluid" />
+            </div>            
+            <div id="more" class="col-12 col-lg-4">
                 <h2>Любимая музыка</h2>
                 <ul>
                     <li>Нурминский</li>
@@ -60,42 +65,36 @@
                 </ol> 
                 <h2>Любимые животные</h2>
                 <ol>
-                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Эублефар Кузя</a>
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content text-center">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Кузя</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                    <img src="Kuzya.jpg" class="img-fluid" width="100%" />
-              </div>
-<!--
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
--->              
-            </div>
-          </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-                    </li>
-                    <li>Лабрадор Барри</li>
+                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#kuzya">Эублефар Кузя</a>                    </li>
+                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#barry">Лабрадор Барри</a></li>
                     <li>Кот Сириус</li>
                     <li>Корги</li>
+
+<!-- Modal -->
+        <div class="modal fade" id="kuzya" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content text-center">
+              <!--div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Кузя</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div-->
+              <div class="modal-body">
+                    <img src="images/Kuzya.jpg" class="img-fluid" width="100%" />
+              </div>
+    
+            </div>
+          </div>
+        </div> 
+        <div class="modal fade" id="barry" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content text-center">
+              <div class="modal-body">
+                    <img src="images/Barry.jpg" class="img-fluid" />
+              </div>
+    
+            </div>
+          </div>
+        </div> 
                 </ol> 
                 <h2>Любимый транспорт</h2>
                 <ol>
@@ -125,7 +124,9 @@
                     <li>Пончики</li>
                     <li>Мороженое</li>
                 </ol>
-                <a href="https://schu463.mskobr.ru/" target="_blank" class="btn btn-primary">Моя школа</a>
+                <div >
+                    <a href="https://schu463.mskobr.ru/" target="_blank" class="btn btn-primary">Моя школа</a>
+                </div>
             </div>
         </div>
 
