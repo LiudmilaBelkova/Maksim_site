@@ -11,6 +11,15 @@
 	vertical-align: bottom;
 }
 
+.panel-footer {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.btn {
+	font-size: 1.5em;	
+}
+
 /************ Medium devices ************/
 /*
 @media (min-width: 768px) and (max-width: 991.98px) {
