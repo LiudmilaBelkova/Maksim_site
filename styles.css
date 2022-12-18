@@ -10,3 +10,38 @@
 #icon-birthday {
 	vertical-align: bottom;
 }
+
+/************ Medium devices ************/
+/*
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.photo-col {
+		display: table-row;
+		float: left;
+		position: relative;
+		left: 0px;
+	}
+}
+*/
+
+/************ Small devices ************/
+@media (max-width: 767px) {
+	h1 {
+		font-size: 8vw;
+	}
+
+	h2 {
+		font-size: 7vw;
+	}
+	
+	p, li {
+		font-size: 5vw;
+	}
+
+	.btn {
+			font-size: 7vw;	
+	}
+
+	.icon {
+		width: 64px;
+	}
+}

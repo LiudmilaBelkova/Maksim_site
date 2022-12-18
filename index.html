@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Обо мне</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="images/train16.png">
     <link href="bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
@@ -14,20 +15,25 @@
             </div>
         </div>
         <div class="row">
-            <div id="bio" class="col-12 col-lg-4 text-center photo-col">
+            
+            <div id="bio" class="col-12 col-md-4 col-lg-4 text-center photo-col">
                 <img src="images/photo.jpg" class="img-fluid"  />
                 <img src="images/Maxim_Cab.jpg" class="img-fluid" />
                 <img src="images/Maxim_Red.jpg" class="img-fluid" />
             </div>
-            <div class="col-12 col-lg-4 text-center photo-col">
+            <!-- Force next columns to break to new line at md breakpoint and up -->
+            <!-- div class="w-100 d-none d-md-block d-lg-none"></div -->
+
+            <div class="col-12 col-md-4 col-lg-4 text-center photo-col" id="second-col">
                 
                 <img src="images/Max_smile.jpg" class="img-fluid" />
                 <img src="images/Max_school.jpg" class="img-fluid" />
                 <img src="images/Max_tree.jpg" class="img-fluid" />
             </div>            
-            <div id="more" class="col-12 col-lg-4">
+            <!--div class="w-100 d-none d-md-inline d-lg-none"></div -->
+            <div id="more" class="col-12  col-md-4 col-lg-4">
                 <p>
-                День рождения: 2 мая 2015 г. <img id="icon-birthday" src="images/icons8-gift.gif" width = "32px" />
+                День рождения: 2 мая 2015 г. <img id="icon-birthday" class="icon" src="images/icons8-gift.gif" width = "32px" />
                 <br>
                 Сегодня: <span id="today"></span>
                 <br>
@@ -132,12 +138,12 @@
                     <li>Мороженое </li>
                 </ol>
                 <p>
-                    <img src="images/pancake.png" width = "32px" />
+                    <img class="icon" src="images/pancake.png" width = "32px" />
                     <!--img src="images/pasta.png" width = "32px" / -->
-                    <img src="images/donut.png" width = "32px" />
-                    <img src="images/ice-cream2.png" width = "32px" />
-                    <img src="images/popsicle.png" width = "32px" />
-                    <img src="images/ice-cream1.png" width = "32px" />
+                    <img class="icon" src="images/donut.png" width = "32px" />
+                    <img class="icon" src="images/ice-cream2.png" width = "32px" />
+                    <img class="icon" src="images/popsicle.png" width = "32px" />
+                    <img class="icon" src="images/ice-cream1.png" width = "32px" />
                 </p>
                 <div >
                     <a href="https://schu463.mskobr.ru/" target="_blank" class="btn btn-primary">Моя школа</a>
