@@ -1,3 +1,12 @@
+/*
+body {
+	background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('images/background.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+*/
+
 .modal-body {
 	padding: 0px;
 }
@@ -11,14 +20,24 @@
 	vertical-align: bottom;
 }
 
-.panel-footer {
-	margin-top: 10px;
-	margin-bottom: 15px;
+#bottom {
+	padding-top: 5px;
+	padding-bottom: 15px;
 }
 
 .btn {
 	font-size: 1.5em;	
 }
+
+/*
+.container {
+	box-shadow: 0 0 20px #AAA;
+}
+
+.row {
+	background-color: hsla(100, 100%, 100%, 0.5);
+}*/
+
 
 /************ Medium devices ************/
 /*
