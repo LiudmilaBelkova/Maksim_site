@@ -61,7 +61,7 @@ body {
 		font-size: 7vw;
 	}
 	
-	p, li {
+	p, li, a {
 		font-size: 5vw;
 	}
 
@@ -71,5 +71,14 @@ body {
 
 	.icon {
 		width: 64px;
+	}
+
+	#col3-button {
+		text-align: center;
+	}
+
+	#bottom-link {
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 }
