@@ -25,9 +25,15 @@ body {
 	font-size: 1.5em;	
 }
 
+#top {
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+
 #bottom-link {
-	padding-top: 8px;
-	padding-bottom: 12px;
+	margin-top: 10px;
+	margin-bottom: 15px;
 }
 
 /*
