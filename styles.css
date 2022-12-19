@@ -36,6 +36,29 @@ body {
 	margin-bottom: 15px;
 }
 
+li.scratch-logo {
+  line-height: 70px;
+}
+
+.scratch-logo a {
+	display: block;
+	width: 150px;
+	height: 70px;	
+	transition: all .15s;
+	transition-timing-function: ease;
+
+  	background-image: url(images/logo_scratch.png);
+  	background-size: 95%; 
+	background-repeat: no-repeat;
+	background-position: center center;  	
+
+	margin-left: -10px;
+}
+
+.scratch-logo a:hover {
+  width: 160px;
+}
+
 /*
 .container {
 	box-shadow: 0 0 20px #AAA;
@@ -80,9 +103,17 @@ body {
 		width: 64px;
 	}
 
-	#col3-button {
+	.col3-button {
 		text-align: center;
 	}
 
+	.scratch-logo a {
+		width: 240px;
+		height: 70px;		
+	}
+
+	.scratch-logo a:hover {
+	  width: 250px;
+	}	
 
 }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="bootstrap.min.css" rel="stylesheet">
+<style> 
+.div-transition {
+  display: block;
+  margin: 20px 20px 20px 20px;
+  width: 100px;
+  height: 50px;
+  background: red;
+  color: white;
+  font-weight: bold;
+  transition: all 2s;
+  background-image: url(images/logo_scratch.png);
+  
+  background-size: 95%;
+  transition-timing-function: linear;
+  /*
+  background-repeat: no-repeat;
+  background-position: center center;*/
+}
+
+#div1 {transition-timing-function: linear;}
+img {transition-timing-function: linear;}
+#div2 {transition-timing-function: ease;}
+#div3 {transition-timing-function: ease-in;}
+#div4 {transition-timing-function: ease-out;}
+#div5 {transition-timing-function: ease-in-out;}
+
+div:hover {
+  width: 300px;
+}
+</style>
+</head>
+<body>
+
+<h1>The transition-timing-function Property</h1>
+
+<div class="div-transition">linear</div>
+<div id="div2">ease</div>
+<div id="div3">ease-in</div>
+<div id="div4">ease-out</div>
+<div id="div5">ease-in-out</div>
+<img src="images/logo_scratch.png" />
+
+<p>Hover over the div elements above, to see the different transition effects.</p>
+
+</body>
+</html>
