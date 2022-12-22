@@ -95,7 +95,7 @@ li.scratch-logo {
 		font-size: 5vw;
 	}
 
-	.btn {
+	.btn, .accordion-button {
 			font-size: 7vw;	
 	}
 
