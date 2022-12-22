@@ -6,7 +6,6 @@
     <link rel="icon" type="image/x-icon" href="images/train16.png">
     <link href="bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
-
 </head>
 <body>
     <div class="container">
@@ -46,7 +45,7 @@
                 <span id="days2bd"></span> 
                 </p>
 
-<p>
+<!--p>
                 <div class="accordion" id="accordionExample">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
@@ -62,7 +61,25 @@
                     </div>
                   </div>
                 </div>
+</p -->
+<p>
+  <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    А что с Новым Годом???
+  </a>    
 </p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    <p id="days2newyear"></p> 
+    <div class="d-flex justify-content-center text-success" id="gifspinner" type="hidden">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <img id="newyeargif" src="https://media.giphy.com/media/iKbYdIG2lNYNfwxkMJ/giphy.gif" width="100%" />
+  </div>
+</div>
+
+
                 <h2>Любимая музыка</h2>
                 <ul>
                     <li>Нурминский</li>

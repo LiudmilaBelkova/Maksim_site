@@ -1,4 +1,10 @@
 (function (global) {
+	document.getElementById("newyeargif").addEventListener("load", function() {
+		var spinner = document.getElementById("gifspinner");
+		spinner.innerHTML = "";
+		console.log("Hello from LOAD event listener, spinner = " + spinner.toString());
+	});
+
 
 	selectGif();
 
@@ -100,3 +106,5 @@ function getDiffText(dateto, datefrom) {
 
 	return ("осталось " + diffDays + " " + diffText);
 }
+
+
