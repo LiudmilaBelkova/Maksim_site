@@ -53,12 +53,16 @@ function selectGif() {
 		"https://media.giphy.com/media/oVwQRNKshZAK7LYV7y/giphy.gif",
 		"https://media.giphy.com/media/DG74Bc2YcitVsPxSC0/giphy.gif", 
 		"https://media.giphy.com/media/AQVL8J3bV49aw/giphy.gif",
+		"https://media.giphy.com/media/iKbYdIG2lNYNfwxkMJ/giphy.gif",
 		"https://media.giphy.com/media/y8iuQRlZeZMvuu6Ce6/giphy.gif",
-		"https://media.giphy.com/media/oynylAXusfu9lonCAr/giphy.gif",
 		"https://media.giphy.com/media/Qh1Ebbb8FQZlbeAqwQ/giphy.gif",
 		"https://media.giphy.com/media/UR4id2vd9g9nbTFm5Z/giphy.gif",
 		"https://media.giphy.com/media/x4mYkGqLEuYebBAghy/giphy.gif",
-		"https://media.giphy.com/media/jWXl5QWiZh75jw7kic/giphy.gif"
+		"https://media.giphy.com/media/jWXl5QWiZh75jw7kic/giphy.gif",
+		"https://media.giphy.com/media/IzpMIE6ovjaXd21orP/giphy.gif",
+		"https://media.giphy.com/media/EwfsnXwoCSlpqvC2pG/giphy.gif",
+		"https://media.giphy.com/media/5HN21Ai8rYPMkP6XNa/giphy.gif",
+		"https://media.giphy.com/media/taWXUe53TAGnvnccQC/giphy.gif"
 	];
 
 	var index = Math.floor((Math.random() * gifs.length));
