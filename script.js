@@ -55,7 +55,7 @@ function selectGif() {
 		"https://media.giphy.com/media/YxlUxrYGw2w9y/giphy.gif",
 		"https://media.giphy.com/media/dJHAdMhIN7UGooISIu/giphy.gif",
 		"https://media.giphy.com/media/3oz8xs53EBnunzqxck/giphy.gif",
-		"https://media.giphy.com/media/ykaOtj0puJRBMJHuya/giphy.gif",
+		// "https://media.giphy.com/media/ykaOtj0puJRBMJHuya/giphy.gif",
 		"https://media.giphy.com/media/oVwQRNKshZAK7LYV7y/giphy.gif",
 		"https://media.giphy.com/media/DG74Bc2YcitVsPxSC0/giphy.gif", 
 		"https://media.giphy.com/media/AQVL8J3bV49aw/giphy.gif",
@@ -65,10 +65,12 @@ function selectGif() {
 		"https://media.giphy.com/media/UR4id2vd9g9nbTFm5Z/giphy.gif",
 		"https://media.giphy.com/media/x4mYkGqLEuYebBAghy/giphy.gif",
 		"https://media.giphy.com/media/jWXl5QWiZh75jw7kic/giphy.gif",
-		"https://media.giphy.com/media/IzpMIE6ovjaXd21orP/giphy.gif",
+		// "https://media.giphy.com/media/IzpMIE6ovjaXd21orP/giphy.gif",
 		"https://media.giphy.com/media/EwfsnXwoCSlpqvC2pG/giphy.gif",
 		"https://media.giphy.com/media/5HN21Ai8rYPMkP6XNa/giphy.gif",
-		"https://media.giphy.com/media/taWXUe53TAGnvnccQC/giphy.gif"
+		"https://media.giphy.com/media/taWXUe53TAGnvnccQC/giphy.gif",
+		"https://media.giphy.com/media/9JrvLb0fnrn7k1ZjhX/giphy.gif",
+		"https://media.giphy.com/media/9JrvLb0fnrn7k1ZjhX/giphy.gif"
 	];
 
 	var index = Math.floor((Math.random() * gifs.length));
