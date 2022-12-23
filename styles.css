@@ -25,6 +25,10 @@ body {
 	margin-bottom: 0.5em;
 }
 
+.card-news p {
+	margin-bottom: 0;
+}
+
 .offcanvas-body {
 	padding-top: 0;
 	/*
@@ -36,6 +40,15 @@ body {
 
 .modal-body {
 	padding: 0px;
+}
+
+.modal-body h2{
+	padding-top: 0.4em;
+	padding-bottom: 0.2em;
+}
+
+#imgUchiTropheys {
+	margin-bottom: 0.6em;	
 }
 
 .photo-col {
@@ -181,8 +194,19 @@ li.uchi-logo {
 		height: 70px;		
 	}
 
+	.uchi-logo a {
+		width: 240px;
+		height: 70px;		
+	}	
+	li.uchi-logo {
+	  line-height: 70px;
+	}	
+
 	.scratch-logo a:hover {
 	  width: 250px;
 	}	
+	.uchi-logo a:hover {
+	  width: 250px;
+	}		
 
 }

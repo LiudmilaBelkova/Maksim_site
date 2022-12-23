@@ -12,7 +12,12 @@
     <div class="container">
         <div class="row">
             <div  class="col-12 text-center">
-                <h1 id="top">Максим Грищенко</h1>
+                <h1 id="top">Максим</h1>
+            </div>
+        </div>
+        <div class="row d-md-none">
+            <div class="col-12 text-center">
+                <p><a href="#birthday">К новостям</a></p>
             </div>
         </div>
         <div class="row">
@@ -37,14 +42,14 @@
                 
 
             <!--div class="w-100 d-none d-md-inline d-lg-none"></div -->
-            <div id="more" class="col-12  col-md-4 col-lg-4">
-                
+            <div id="divInfo" class="col-12  col-md-4 col-lg-4">
+                <p id="birthday">
                 День рождения: 2 мая 2015 г. <img id="icon-birthday" class="icon" src="images/icon-gift.gif" width = "32px" />
                 <br>
                 Сегодня: <span id="today"></span>
                 <br>
                 <span id="days2bd"></span> 
-                
+                </p>
 
                 <button id="btnNews" class="btn btn-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNews" aria-controls="offcanvasNews">Какие новости?</button>
 
@@ -54,10 +59,11 @@
                     <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Мои новости</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
+
                     <div class="offcanvas-body">
                         <div class="card card-body card-news">
                             <h6>23.12.2022</h6>
-                            <p>Сегодня на завтрак ел кашу</p>
+                            <p>Я завтракаю в школе, завтраком была булка. Обедаю я дома, на обед были вареники с творогом. И ужинаю я дома, но я ещё не ужинал!</p>
                         </div>
                         <div class="card card-body card-news">
                             <h6>22.12.2022</h6>
@@ -70,7 +76,11 @@
                         <div class="card card-body card-news">
                             <h6>20.12.2022</h6>
                             <p>На обед был суп</p>
-                        </div>                                                                        
+                        </div>
+                        <div class="card card-body card-news">
+                            <h6>17.12.2022</h6>
+                            <p>Мы сегодня ставили ёлку. Ставили и наряжали мы её целых 3 часа. Ёлка получилась большая и блестящая!</p>
+                        </div>                                                                                                     
                     </div>
                 </div> <!-- End of news offcanvas -->
 
@@ -222,7 +232,8 @@
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content text-center">
               <div class="modal-body">
-                    <img src="images/uchi_tropheys.png"  class="img-fluid" />
+                    <h2>Коллекция трофеев за марафоны</h2>
+                    <img src="images/uchi_tropheys.png" id="imgUchiTropheys"  class="img-fluid" />
               </div>
     
             </div>
