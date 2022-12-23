@@ -10,7 +10,7 @@
 		console.log("Hello from CLICK event listener, frame = " + frame.toString());
 		frame.src = frame.src;
 
-		document.getElementById("linkcat").removeEventListener("click", linkCatClickEventListener);
+		// document.getElementById("linkcat").removeEventListener("click", linkCatClickEventListener);
 	}
 
 	document.getElementById("linkcat").addEventListener("click", linkCatClickEventListener);

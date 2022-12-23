@@ -4,6 +4,7 @@
     <title>Обо мне</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="images/train16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Pangolin&display=swap" rel="stylesheet">   
     <link href="bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
 </head>
@@ -37,31 +38,61 @@
 
             <!--div class="w-100 d-none d-md-inline d-lg-none"></div -->
             <div id="more" class="col-12  col-md-4 col-lg-4">
-                <p>
+                
                 День рождения: 2 мая 2015 г. <img id="icon-birthday" class="icon" src="images/icon-gift.gif" width = "32px" />
                 <br>
                 Сегодня: <span id="today"></span>
                 <br>
                 <span id="days2bd"></span> 
+                
+
+                <button id="btnNews" class="btn btn-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNews" aria-controls="offcanvasNews">Какие новости?</button>
+
+                <!-- News offcanvas -->
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasNews" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Мои новости</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="card card-body card-news">
+                            <h6>23.12.2022</h6>
+                            <p>Сегодня на завтрак ел кашу</p>
+                        </div>
+                        <div class="card card-body card-news">
+                            <h6>22.12.2022</h6>
+                            <p>Сегодня на завтрак ел сырники</p>
+                        </div> 
+                        <div class="card card-body card-news">
+                            <h6>21.12.2022</h6>
+                            <p>Сегодня на завтрак ел блины</p>
+                        </div> 
+                        <div class="card card-body card-news">
+                            <h6>20.12.2022</h6>
+                            <p>На обед был суп</p>
+                        </div>                                                                        
+                    </div>
+                </div> <!-- End of news offcanvas -->
+
+                <p>
+                  <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseNewyear" role="button" aria-expanded="false" aria-controls="collapseNewyear">
+                    А что с Новым Годом???
+                  </a>    
                 </p>
-<p>
-  <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseNewyear" role="button" aria-expanded="false" aria-controls="collapseNewyear">
-    А что с Новым Годом???
-  </a>    
-</p>
-<p>
-<div class="collapse" id="collapseNewyear">
-  <div class="card card-body">
-    <p id="days2newyear"></p> 
-    <div class="d-flex justify-content-center text-success" id="gifspinner" type="hidden">
-      <div class="spinner-border" role="status">
-        <span class="visually-hidden">Loading...</span>
-      </div>
-    </div>
-    <img id="newyeargif" src="https://media.giphy.com/media/iKbYdIG2lNYNfwxkMJ/giphy.gif" width="100%" />
-  </div>
-</div>
-</p>
+                <p>
+                <div class="collapse" id="collapseNewyear">
+                  <div class="card card-body">
+                    <p id="days2newyear"></p> 
+                    <div class="d-flex justify-content-center text-success" id="gifspinner" type="hidden">
+                      <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                    </div>
+                    <img id="newyeargif" src="https://media.giphy.com/media/iKbYdIG2lNYNfwxkMJ/giphy.gif" width="100%" />
+                  </div>
+                </div>
+                </p>
+
 
                 <h2>Любимая музыка</h2>
                 <ul>
@@ -107,7 +138,8 @@
                     <li><a id="linkcat" data-bs-toggle="collapse" href="#collapseCat" role="button" aria-expanded="false" aria-controls="collapseCat">Кот Сириус</a>
                         <div class="collapse" id="collapseCat">
                           <div class="card card-body">
-                            <div style="width:100%;overflow:hidden;"><div style="height:0;padding-bottom:177.63157894736844%;position:relative;width:100%"><iframe id="framecat" allowfullscreen="" frameBorder="0" height="100%" src="https://giphy.com/embed/paWQwjlM2mKKGa2vsR/video" style="left:0;position:absolute;top:0;overflow:hidden;" width="100%"></iframe></div></div>   
+                            <div style="width:100%;overflow:hidden;">
+                                <div style="height:0;padding-bottom:177.63157894736844%;position:relative;width:100%"><iframe id="framecat" allowfullscreen="" frameBorder="0" height="100%" src="https://giphy.com/embed/paWQwjlM2mKKGa2vsR/video" style="left:0;position:absolute;top:0;overflow:hidden;" width="100%"></iframe></div></div>   
                          
                           </div>
                         </div>
@@ -181,7 +213,21 @@
     
             </div>
           </div>
-        </div>                                  
+        </div>     
+        <li class="uchi-logo">
+                    <a aria-label="Uchi" href="#" data-bs-toggle="modal" data-bs-target="#uchi"></a>
+                </li>   
+
+        <div class="modal fade" id="uchi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center">
+              <div class="modal-body">
+                    <img src="images/uchi_tropheys.png"  class="img-fluid" />
+              </div>
+    
+            </div>
+          </div>
+        </div>                                         
                 </ul>
                 
                 <h2>Любимые блюда</h2>
@@ -205,6 +251,9 @@
 
                 <div class="col3-button">
                     <a href="https://schu463.mskobr.ru/" target="_blank" class="btn btn-primary">Моя школа</a>
+                
+                
+
                 </div>
             </div>
         </div>
