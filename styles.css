@@ -11,9 +11,11 @@ body {
 	font-family: 'Pangolin', cursive; 
 	font-family: 'Pacifico', cursive;
 	
-	text-decoration: none;
+	text-decoration: underline;
 	margin-left: -14px;
 	margin-bottom: 4px;
+	padding-top: 0;
+	padding-bottom: 0;
 	box-shadow: 0 0 0 0;
 }
 

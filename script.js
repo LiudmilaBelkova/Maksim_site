@@ -1,4 +1,5 @@
 (function (global) {
+	// Add event listeners
 	document.getElementById("newyeargif").addEventListener("load", function() {
 		var spinner = document.getElementById("gifspinner");
 		spinner.innerHTML = "";
@@ -16,6 +17,16 @@
 	document.getElementById("linkcat").addEventListener("click", linkCatClickEventListener);
 
 
+	[...document.querySelectorAll('.click2hide')].forEach(function(item) {
+  		item.addEventListener('click', function() {
+    		console.log(item.toString());
+    		//item.style.visibility = "hidden";
+    		item.style.display = "none";
+  		});
+   	});
+
+
+	// Calculate dynamic fields
 	selectGif();
 
 	var today_str = new Intl.DateTimeFormat("ru", {day: "numeric", month: "long", year: "numeric", weekday: "long"}).format(new Date()); //.replace(/(\s?\г\.?)/, "");
