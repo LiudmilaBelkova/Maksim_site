@@ -44,30 +44,13 @@
                 <br>
                 <span id="days2bd"></span> 
                 </p>
-
-<!--p>
-                <div class="accordion" id="accordionExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        А что с Новым Годом???
-                      </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <p id="days2newyear"></p>  
-                        <img id="newyeargif" src="https://media.giphy.com/media/iKbYdIG2lNYNfwxkMJ/giphy.gif" width="100%" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-</p -->
 <p>
-  <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseNewyear" role="button" aria-expanded="false" aria-controls="collapseNewyear">
     А что с Новым Годом???
   </a>    
 </p>
-<div class="collapse" id="collapseExample">
+<p>
+<div class="collapse" id="collapseNewyear">
   <div class="card card-body">
     <p id="days2newyear"></p> 
     <div class="d-flex justify-content-center text-success" id="gifspinner" type="hidden">
@@ -78,7 +61,8 @@
     <img id="newyeargif" src="https://media.giphy.com/media/iKbYdIG2lNYNfwxkMJ/giphy.gif" width="100%" />
   </div>
 </div>
-<p></p>
+</p>
+
                 <h2>Любимая музыка</h2>
                 <ul>
                     <li>Нурминский</li>
@@ -120,17 +104,29 @@
                 <ol>
                     <li><a href="#" data-bs-toggle="modal" data-bs-target="#kuzya">Эублефар Кузя</a>                    </li>
                     <li><a href="#" data-bs-toggle="modal" data-bs-target="#barry">Лабрадор Барри</a></li>
-                    <li>Кот Сириус</li>
-                    <li>Корги</li>
+                    <li><a id="linkcat" data-bs-toggle="collapse" href="#collapseCat" role="button" aria-expanded="false" aria-controls="collapseCat">Кот Сириус</a>
+                        <div class="collapse" id="collapseCat">
+                          <div class="card card-body">
+                            <div style="width:100%;overflow:hidden;"><div style="height:0;padding-bottom:177.63157894736844%;position:relative;width:100%"><iframe id="framecat" allowfullscreen="" frameBorder="0" height="100%" src="https://giphy.com/embed/paWQwjlM2mKKGa2vsR/video" style="left:0;position:absolute;top:0;overflow:hidden;" width="100%"></iframe></div></div>   
+                         
+                          </div>
+                        </div>
+                     </li>
 
+
+     
+                    <li>
+                        <a data-bs-toggle="collapse" href="#collapseCorgy" role="button" aria-expanded="false" aria-controls="collapseCorgy">Корги</a>
+                        <div class="collapse" id="collapseCorgy">
+                        <div class="card card-body">
+                            <img src="https://media.giphy.com/media/eeUJaTwsHh3tswkaYm/giphy.gif" width="100%" />
+                        </div>
+                        </div>                        
+                    </li>
 <!-- Modal -->
         <div class="modal fade" id="kuzya" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered ">
             <div class="modal-content text-center">
-              <!--div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Кузя</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div-->
               <div class="modal-body">
                     <img src="images/Kuzya.jpg" class="img-fluid" width="100%" />
               </div>
@@ -139,7 +135,7 @@
           </div>
         </div> 
         <div class="modal fade" id="barry" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content text-center">
               <div class="modal-body">
                     <img src="images/Barry.jpg" class="img-fluid" />
@@ -148,7 +144,13 @@
             </div>
           </div>
         </div> 
-                </ol> 
+                 </ol> 
+            
+            
+            
+                
+              
+
                 <h2>Любимый транспорт</h2>
                 <ol>
                     <li>Самолёт</li>
@@ -199,9 +201,7 @@
                     <img class="icon" src="images/popsicle.png" width = "32px" />
                     <img class="icon" src="images/ice-cream1.png" width = "32px" />
                 </p>
-<!--
-<iframe src="https://scratch.mit.edu/projects/749624256/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>                
--->
+
 
                 <div class="col3-button">
                     <a href="https://schu463.mskobr.ru/" target="_blank" class="btn btn-primary">Моя школа</a>

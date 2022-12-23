@@ -5,6 +5,16 @@
 		console.log("Hello from LOAD event listener, spinner = " + spinner.toString());
 	});
 
+	function linkCatClickEventListener() {
+		var frame = document.getElementById("framecat"); //.contentWindow.location.reload(true);
+		console.log("Hello from CLICK event listener, frame = " + frame.toString());
+		frame.src = frame.src;
+
+		document.getElementById("linkcat").removeEventListener("click", linkCatClickEventListener);
+	}
+
+	document.getElementById("linkcat").addEventListener("click", linkCatClickEventListener);
+
 
 	selectGif();
 

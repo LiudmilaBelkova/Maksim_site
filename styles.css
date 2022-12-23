@@ -44,6 +44,14 @@ li.scratch-logo {
   line-height: 70px;
 }
 
+li .card,  ol .card, ul .card {
+	margin-left: -32px;
+}
+
+iframe, video {
+	overflow: hidden;
+}
+
 .scratch-logo a {
 	display: block;
 	width: 150px;
