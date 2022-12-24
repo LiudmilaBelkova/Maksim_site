@@ -8,7 +8,7 @@
 
 	function linkCatClickEventListener() {
 		var frame = document.getElementById("framecat"); //.contentWindow.location.reload(true);
-		console.log("Hello from CLICK event listener, frame = " + frame.toString());
+		// console.log("Hello from CLICK event listener, frame = " + frame.toString());
 		frame.src = frame.src;
 
 		// document.getElementById("linkcat").removeEventListener("click", linkCatClickEventListener);
@@ -19,19 +19,24 @@
 
 	[...document.querySelectorAll('.click2hide')].forEach(function(item) {
   		item.addEventListener('click', function() {
-    		console.log(item.toString());
-    		//item.style.visibility = "hidden";
-    		item.style.display = "none";
-
     		var audios = ['sounds/eating.mp3', 'sounds/chew.mp3', 'sounds/eatingsfxwav.mp3', 
     			'sounds/eating.mp3', 'sounds/chew.mp3', 'sounds/eatingsfxwav.mp3', 
     			'sounds/game-eat-sound.mp3'];
     		var index = Math.floor(Math.random() * audios.length);
-    		console.log("Index = " + index.toString());
+    		
     		var audio = new Audio(audios[index]);
 			audio.play();
+
+			item.style.display = "none";
   		});
    	});
+
+	[...document.querySelectorAll('.click2hide')].forEach(function(item) {
+  		item.addEventListener('mousedown', function() {
+    		// console.log("Hello from mousedown event");
+    		item.style.cursor = 'grabbing';
+   		});
+   	});   	
 
 
 	// Calculate dynamic fields
