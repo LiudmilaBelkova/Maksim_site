@@ -23,7 +23,7 @@
     		//item.style.visibility = "hidden";
     		item.style.display = "none";
 
-    		var audios = ['sounds/eating.mp3', 'sounds/chew.mp3', 'sounds/eatingsfxwav.mp3'];
+    		var audios = ['sounds/eating.mp3', 'sounds/chew.mp3', 'sounds/eatingsfxwav.mp3', 'sounds/game-eat-sound.mp3'];
     		var index = Math.floor(Math.random() * audios.length);
     		console.log("Index = " + index.toString());
     		var audio = new Audio(audios[index]);
