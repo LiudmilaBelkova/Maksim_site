@@ -166,6 +166,12 @@ li.uchi-logo {
 	box-shadow: 0 0 0 0;
 }
 
+@media (min-width: 766px) {
+	.offcanvas-start {
+		width: 600px;
+	}
+}
+
 /************ Small devices ************/
 @media (max-width: 767px) {
 	h1 {
